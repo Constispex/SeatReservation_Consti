@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="de.medieninformatik.server.client.SeatingController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5e3be;">
+            <children>
+                <BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5e3be;">
+                    <center>
+                        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                  prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #81482a;"
+                                  BorderPane.alignment="CENTER">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <children>
+                                <Button fx:id="testid" userData="00" maxHeight="-Infinity" maxWidth="-Infinity"
+                                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                        onAction="#onSeatClick" prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+                                <Button userData="01" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="02" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="03" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="04" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="05" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="06" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="07" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="08" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="09" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="010" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="011" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="012" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="013" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="014" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="015" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="016" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="017" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="018" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="019" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="12" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="13" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="14" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="15" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="16" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="17" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="18" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="19" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="110" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="111" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="112" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="113" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="114" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="115" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="116" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="117" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="118" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="119" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="20" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="21" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="22" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="23" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="24" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="25" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="26" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="27" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="28" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="29" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="210" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="211" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="212" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="213" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="214" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="215" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="216" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="217" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="218" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="219" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="30" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="31" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="32" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="33" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="34" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="35" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="36" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="37" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="38" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="39" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="310" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="311" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="312" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="313" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="314" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="315" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="316" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="317" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="318" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="319" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="40" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="41" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="42" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="43" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="44" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="45" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="46" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="47" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="48" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="49" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="410" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="411" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="412" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="413" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="414" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="415" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="416" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="417" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="418" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="419" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="50" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="51" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="52" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="53" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="54" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="55" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="56" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="57" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="58" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="59" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="510" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="511" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="512" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="513" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="514" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="515" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="516" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="517" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="518" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="519" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="5"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="60" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="61" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="62" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="63" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="64" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="65" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="66" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="67" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="68" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="69" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="610" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="611" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="612" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="613" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="614" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="615" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="616" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="617" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="618" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="619" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="6"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="70" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="71" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="72" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="73" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="74" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="75" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="76" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="77" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="78" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="79" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="710" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="711" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="712" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="713" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="714" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="715" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="716" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="717" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="718" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="719" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="7"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="80" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="81" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="82" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="83" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="84" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="85" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="86" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="87" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="88" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="89" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="810" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="811" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="812" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="813" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="814" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="815" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="816" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="817" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="818" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="819" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="8"
+                                        GridPane.valignment="CENTER"/>
+
+                                <Button userData="90" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="91" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="92" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="93" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="94" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="95" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="96" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="97" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="98" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="99" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="910" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="911" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="912" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="913" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="914" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="14" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="915" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="916" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="16" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="917" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="17" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="918" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="18" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                                <Button userData="919" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                        minWidth="-Infinity" mnemonicParsing="false" onAction="#onSeatClick"
+                                        prefHeight="20.0" prefWidth="20.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-radius: 5px;"
+                                        GridPane.columnIndex="19" GridPane.halignment="CENTER" GridPane.rowIndex="9"
+                                        GridPane.valignment="CENTER"/>
+                            </children>
+                        </GridPane>
+                    </center>
+                    <top>
+                        <Pane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="49.0" prefWidth="200.0"
+                              style="-fx-background-color: #81482a;" BorderPane.alignment="CENTER">
+                            <children>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" height="10.0" opacity="0.0"
+                                           stroke="BLACK" strokeType="INSIDE" width="500.0" x="50.0"/>
+                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" prefHeight="49.0"
+                                       prefWidth="350.0" text="Nightingale Theatre" textAlignment="CENTER"
+                                       textFill="#cb8e4a">
+                                    <font>
+                                        <Font name="Bookman Old Style" size="35.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                    </top>
+                    <bottom>
+                        <Pane maxHeight="-Infinity" prefHeight="49.0" prefWidth="200.0"
+                              style="-fx-background-color: #81482a;" BorderPane.alignment="CENTER">
+                            <children>
+                                <Button fx:id="seatingBtn" layoutX="210.0" layoutY="8.0" maxHeight="-Infinity"
+                                        maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                        mnemonicParsing="false" onAction="#onReservationClick" prefHeight="35.0"
+                                        prefWidth="180.0"
+                                        style="-fx-background-color: #5f021f; -fx-border-color: #cb8e4a; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-width: 2px;"
+                                        text="Make a reservation" textFill="#f5e3be">
+                                    <font>
+                                        <Font name="Bookman Old Style" size="16.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </Pane>
+                    </bottom>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
